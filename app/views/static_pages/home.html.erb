@@ -1,0 +1,19 @@
+</br>
+</br>
+</br>
+<p><h1>Bienvenue sur la page d'accueil ⛵️🎓😇 !</h1></p>
+<p>Vous trouverez plein de belle choses ici</p>
+
+<p>
+            <a href="<%= new_path %>" class="btn btn-primary my-2">créer un utilisateur</a>
+</p>
+</br>
+</br>
+<div>
+  <% User.all.each_with_index do |users, index| %>
+    <p>
+    </br>
+      <a href="/users/<%= users.username %>"class="btn btn-secondary my-2">Voir la page de <%= users.username %></a>
+    </p>
+  <% end %>
+</div>
